@@ -6,9 +6,14 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy"
-    
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "luxon": "^3.4.4"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
 }

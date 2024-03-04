@@ -115,6 +115,7 @@ input[type=number]:focus,
           box-shadow: none;
 }
 
+
 input:focus::-moz-placeholder {
   opacity: 0;
   -webkit-transition: .4s;
@@ -2181,9 +2182,12 @@ input.qty-val {
   margin: 0 -12px;
 }
 
+
+
 .carausel-10-columns-cover .carausel-10-columns .card-2 {
   margin-right: 12px;
   margin-left: 12px;
+  
 }
 
 .carausel-4-columns-cover .carausel-4-columns {
@@ -2327,6 +2331,153 @@ input.qty-val {
 .card-1:hover a {
   color: #3BB77E;
 }
+
+/* Styles for SiddhVastu5® */
+.topic-txt h1 {
+  font-size: 2.5rem;
+  color: #2980b9; /* Change to your preferred color */
+}
+
+/* Styles for topic subtitle */
+.topic-sub-txt {
+  font-size: 1.5rem;
+  color: #34495e; /* Change to your preferred color */
+  margin-top: 20px;
+}
+
+/* Styles for links */
+.topic-sub-txt a {
+  text-decoration: none;
+  color: #2980b9; /* Change to your preferred color */
+}
+
+.topic-sub-txt a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for paragraphs */
+.text-start {
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666; /* Change to your preferred color */
+  margin-top: 20px;
+}
+
+/* Styles for buttons */
+.button2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2980b9; /* Change to your preferred color */
+  color: #fff; /* Change to your preferred color */
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.button2:hover {
+  background-color: #3498db; /* Change to your preferred color */
+}
+
+/* Additional styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 300px;
+  height: 260px;
+  margin-left: 50px;
+}
+
+/* Profile Text Area */
+.profile-text-area {
+  padding: 25px;
+  background-color: #f8f9fa; /* Light gray background color */
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Profile Text */
+.profile-text-area h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333; /* Dark text color */
+}
+
+.profile-text-area p {
+  color: #555; /* Medium dark text color */
+  text-align: justify;
+}
+
+/* Profile Link */
+.profile-link img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Profile Right Link */
+.profile-right-link {
+  text-align: end;
+}
+
+/* Vertical Center */
+.vertical-center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Mobile Paragraph */
+.d-sm-block.d-block.d-md-none.profile-text-area p {
+  text-align: justify;
+}
+
+
+.card {
+  background-color: #fff; /* Set background color */
+  border-radius: 8px; /* Set border radius for rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  transition: all 0.3s ease; /* Add transition for smooth effect */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Move the card up slightly on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add box shadow for elevation */
+  border: 1px solid #34A853; /* Change border color */
+}
+
+.card .card-body {
+  padding: 20px; /* Add padding to card body */
+}
+
+
+
+.card .card-img-top img {
+  max-height: 60px; /* Set maximum height for card images */
+  width: auto; /* Ensure images maintain aspect ratio */
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.card .card-img-top img:hover {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.card h6 a {
+  color: #253D4E; /* Set font color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.card h6 a:hover {
+  color: #34A853; /* Change font color on hover */
+}
+
 
 .card-2 {
   position: relative;
@@ -2662,7 +2813,7 @@ input.qty-val {
 }
 
 .nav-tabs.right .nav-item:last-child .nav-link {
-  margin-right: 0;
+  margin-right: 5;
 }
 
 .nav.right {
@@ -6920,6 +7071,16 @@ h6.post-title {
   margin-right: 5px;
 }
 
+.header-info strong {
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+
+.header-info ul li img {
+  width: 25px; 
+  height: 25px;
+}
+
 .header-info-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6957,6 +7118,9 @@ h6.post-title {
   height: 10px;
   background: #dedfe2;
 }
+
+
+
 
 .header-info > ul > li:last-child {
   margin-right: 0;
@@ -8141,14 +8305,17 @@ h6.post-title {
   color: #B6B6B6;
 }
 
+
+
+
 .mobile-social-icon a {
   text-align: center;
   font-size: 14px;
   margin-right: 5px;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -8163,7 +8330,7 @@ h6.post-title {
 }
 
 .mobile-social-icon a img {
-  max-width: 16px;
+  max-width: 30px;
 }
 
 .mobile-social-icon a img:hover {
@@ -9612,6 +9779,7 @@ footer .hotline img {
 .widget-install-app {
   min-width: 310px;
 }
+
 
 .contact-infor {
   font-size: 15px;

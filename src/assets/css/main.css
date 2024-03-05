@@ -2332,6 +2332,12 @@ input.qty-val {
   color: #3BB77E;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
 /* Styles for SiddhVastu5® */
 .topic-txt h1 {
   font-size: 2.5rem;
@@ -3508,7 +3514,7 @@ table .product-thumbnail img {
 .custom-modal .modal-dialog .modal-content {
   border-radius: 25px;
   padding: 40px;
-  border: 1px solid #BCE3C9;
+  border: 6px solid #BCE3C9;
 }
 
 .custom-modal .modal-dialog .btn-close {

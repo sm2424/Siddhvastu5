@@ -839,7 +839,7 @@ strong,
 .header-ribbon a.nav-link {
   display: flex; /* Use flexbox to align items in a row */
   align-items: center; /* Align items vertically */
-  margin-right: 5px; /* Adjust spacing between items */
+  margin-right: 2px; /* Adjust spacing between items */
 }
 
 .header-ribbon a.nav-link img {

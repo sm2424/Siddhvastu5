@@ -1,0 +1,23 @@
+[
+    {"id": 1, "name": "New Arrival", "image": "/assets/imgs/shop/new_arrival.jpg", "hover": "/assets/imgs/shop/new_arrival.jpg"},
+    {"id": 2, "name": "7 Chakra Products", "image": "/assets/imgs/shop/7Chakrawithrudhraksh.jpeg", "hover": "/assets/imgs/shop/7Chakrawithrudhraksh.jpeg"},
+    {"id": 3, "name": "Bracelets", "image": "/assets/imgs/shop/multibracelet.jpeg", "hover": "/assets/imgs/shop/multibracelet.jpeg"},
+    {"id": 4, "name": "Candle & Incense", "image": "/assets/imgs/shop/Candle_Incense_.jpg", "hover": "/assets/imgs/shop/Candle_Incense_.jpg"},
+    {"id": 5, "name": "Crystal/Stone Trees", "image": "/assets/imgs/shop/tree.jpg", "hover": "/assets/imgs/shop/tree.jpg"},
+    {"id": 6, "name": "Dowser/Pendulum", "image": "/assets/imgs/shop/crystal-pendulum.png", "hover": "/assets/imgs/shop/crystal-pendulum.png"},
+    {"id": 7, "name": "Earrings", "image": "/assets/imgs/shop/earrings.jpg", "hover": "/assets/imgs/shop/earrings.jpg"},
+    {"id": 8, "name": "Evil Eye", "image": "/assets/imgs/shop/evileye.jpg", "hover": "/assets/imgs/shop/evileye.jpg"},
+    {"id": 9, "name": "Gem Stone", "image": "/assets/imgs/shop/gemstone.png", "hover": "/assets/imgs/shop/gemstone.png"},
+    {"id": 10, "name": "Malas", "image": "/assets/imgs/shop/mala.jpg", "hover": "/assets/imgs/shop/mala.jpg"},
+    {"id": 11, "name": "Mix Items", "image": "/assets/imgs/shop/Mix_Item_1.jpg", "hover": "/assets/imgs/shop/Mix_Item_1.jpg"},
+    {"id": 12, "name": "Natural Cluster", "image": "/assets/imgs/shop/naturalclusters.jpg", "hover": "/assets/imgs/shop/naturalclusters.jpg"},
+    {"id": 13, "name": "Pendants", "image": "/assets/imgs/shop/pendant.png", "hover": "/assets/imgs/shop/pendant.png"},
+    {"id": 14, "name": "Pyramids", "image": "/assets/imgs/shop/pyramids.png", "hover": "/assets/imgs/shop/pyramids.png"},
+    {"id": 15, "name": "Rings", "image": "/assets/imgs/shop/pyrite_ring_cluster.jpg", "hover": "/assets/imgs/shop/pyrite_ring_cluster.jpg"},
+    {"id": 16, "name": "Rudraksha", "image": "/assets/imgs/shop/rudraksh.png", "hover": "/assets/imgs/shop/rudraksh.png"},
+    {"id": 17, "name": "Salt Lamp", "image": "/assets/imgs/shop/saltlamp.png", "hover": "/assets/imgs/shop/saltlamp.png"},
+    {"id": 18, "name": "Singing Bowl", "image": "/assets/imgs/shop/singing_bowl.png", "hover": "/assets/imgs/shop/singing_bowl.png"},
+    {"id": 19, "name": "Vastu", "image": "/assets/imgs/shop/vastu.jpg", "hover": "/assets/imgs/shop/vastu.jpg"},
+    {"id": 20, "name": "Wish Box", "image": "/assets/imgs/shop/wishbox.jpg", "hover": "/assets/imgs/shop/wishbox.jpg"},
+    {"id": 21, "name": "Consultany", "image": "/assets/imgs/shop/consultancy.png", "hover": "/assets/imgs/shop/consultancy.png"}
+]

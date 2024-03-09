@@ -1,0 +1,99 @@
+[
+    {
+        "category_id": 1,
+        "products": [
+            {
+                "id": 1,
+                "name": "Product 1",
+                "image": "/assets/imgs/shop/product1.jpg",
+                "price": 10.99
+            },
+            {
+                "id": 2,
+                "name": "Product 2",
+                "image": "/assets/imgs/shop/product2.jpg",
+                "price": 15.99
+            },
+            {
+                "id": 3,
+                "name": "Product 3",
+                "image": "/assets/imgs/shop/product3.jpg",
+                "price": 20.99,
+                "category": [
+                    7,
+                    90,
+                    60
+                ]
+            }
+        ]
+    },
+    {
+        "category_id": 2,
+        "products": [
+            {
+                "id": 4,
+                "name": "Product 4",
+                "image": "/assets/imgs/shop/product4.jpg",
+                "price": 25.99
+            },
+            {
+                "id": 5,
+                "name": "Product 5",
+                "image": "/assets/imgs/shop/product5.jpg",
+                "price": 30.99
+            },
+            {
+                "id": 6,
+                "name": "Product 6",
+                "image": "/assets/imgs/shop/product6.jpg",
+                "price": 35.99
+            }
+        ]
+    },
+    {
+        "category_id": 3,
+        "products": [
+            {
+                "id": 7,
+                "name": "Product 7",
+                "image": "/assets/imgs/shop/product7.jpg",
+                "price": 40.99
+            },
+            {
+                "id": 8,
+                "name": "Product 8",
+                "image": "/assets/imgs/shop/product8.jpg",
+                "price": 45.99
+            },
+            {
+                "id": 9,
+                "name": "Product 9",
+                "image": "/assets/imgs/shop/product9.jpg",
+                "price": 50.99
+            }
+        ]
+    },
+    {
+        "category_id": 4,
+        "products": [
+            {
+                "id": 10,
+                "name": "Product 10",
+                "image": "/assets/imgs/shop/product10.jpg",
+                "price": 55.99
+            },
+            {
+                "id": 11,
+                "name": "Product 11",
+                "image": "/assets/imgs/shop/product11.jpg",
+                "price": 60.99
+            },
+            {
+                "id": 12,
+                "name": "Product 12",
+                "image": "/assets/imgs/shop/product12.jpg",
+                "price": 65.99
+            }
+        ]
+    }
+]

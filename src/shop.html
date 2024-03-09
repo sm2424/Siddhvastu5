@@ -31,6 +31,7 @@ layout: 'base.njk'
                     <div class="product-cart-wrap mb-30">
                         <div class="product-img-action-wrap">
                             <div class="product-img product-img-zoom">
+                                <a href="/shop/{{ category.name | slugify }}/{{ product.name | slugify }}/">{{ product.name }}</a>
                                 <a href="/shop/{{ category.name | slugify }}/">
                                     <img class="default-img" src="{{ category.image }}" alt="{{ category.name }}" />
                                     <img class="hover-img" src="{{ category.hover }}" alt="{{ category.name }}" />
@@ -44,7 +45,7 @@ layout: 'base.njk'
                         </strong>
                     </div>
                 </div>
-                {% endfor %}
+              {% endfor %}
                 <!--end product card-->
             </div>
         </div>

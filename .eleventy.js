@@ -9,6 +9,19 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("postDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     })
+    eleventyConfig.addFilter("getProducts", (collection, category) => {
+        console.log(collection, category)
+        return ''
+        // return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    })
+
+    eleventyConfig.addCollection("products", function (collection) {
+        // Fetch products data from products.json
+        const products = require("./src/_data/products.json");
+        return products;
+    });
+
+
 
     return {
         dir: {

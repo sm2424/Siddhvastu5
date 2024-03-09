@@ -9,6 +9,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("postDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     })
+    eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+    
     eleventyConfig.addFilter("getProducts", (collection, category) => {
         console.log(collection, category)
         return ''

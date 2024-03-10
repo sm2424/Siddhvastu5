@@ -1,7 +1,8 @@
 <div class="container-fluid">
     <!-- blue ribbon -->
     <div class="row header-ribbon">
-        <div class="col-md-7 col-sm-10 col-10 d-md-flex d-sm-none d-none justify-content-start text-small align-items-center">
+        <div
+            class="col-md-7 col-sm-10 col-10 d-md-flex d-sm-none d-none justify-content-start text-small align-items-center">
             <a href="tel:++91 9824900855" class="nav-link text-white">
                 <img src="/assets/imgs/theme/icons/icon-headphone.svg" alt="" /><span>+91 9824900855</span>
             </a>
@@ -314,8 +315,8 @@
                             <div class="more_categories"><span class="icon"></span> <span class="heading-sm-1">Show more...</span></div>
                         </div> -->
                     </div>
-                    
-                    
+
+
                     <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block  font-heading-right">
                         <nav>
                             <ul>
@@ -325,7 +326,7 @@
                                 <li>
                                     <a href="/freeadvice/">Free Advice</a>
                                 </li>
-                                
+
                                 <li>
                                     <a href="/">Consulting <i class="fi-rs-angle-down"></i></a>
                                     <ul class="sub-menu">
@@ -346,36 +347,9 @@
                                 <li>
                                     <a href="/shop/">Shop <i class="fi-rs-angle-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="shop-grid-right">Shop Grid – Right Sidebar</a></li>
-                                        <li><a href="shop-grid-left">Shop Grid – Left Sidebar</a></li>
-                                        <li><a href="shop-list-right">Shop List – Right Sidebar</a></li>
-                                        <li><a href="shop-list-left">Shop List – Left Sidebar</a></li>
-                                        <li><a href="shop-fullwidth">Shop - Wide</a></li>
-                                        <li>
-                                            <a href="#">Single Product <i class="fi-rs-angle-right"></i></a>
-                                            <ul class="level-menu">
-                                                <li><a href="shop-product-right">Product – Right Sidebar</a></li>
-                                                <li><a href="shop-product-left">Product – Left Sidebar</a></li>
-                                                <li><a href="shop-product-full">Product – No sidebar</a></li>
-                                                <li><a href="shop-product-vendor">Product – Vendor Info</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="shop-filter">Shop – Filter</a></li>
-                                        <li><a href="shop-wishlist">Shop – Wishlist</a></li>
-                                        <li><a href="shop-cart">Shop – Cart</a></li>
-                                        <li><a href="shop-checkout">Shop – Checkout</a></li>
-                                        <li><a href="shop-compare">Shop – Compare</a></li>
-                                        <li>
-                                            <a href="#">Shop Invoice<i class="fi-rs-angle-right"></i></a>
-                                            <ul class="level-menu">
-                                                <li><a href="shop-invoice-1">Shop Invoice 1</a></li>
-                                                <li><a href="shop-invoice-2">Shop Invoice 2</a></li>
-                                                <li><a href="shop-invoice-3">Shop Invoice 3</a></li>
-                                                <li><a href="shop-invoice-4">Shop Invoice 4</a></li>
-                                                <li><a href="shop-invoice-5">Shop Invoice 5</a></li>
-                                                <li><a href="shop-invoice-6">Shop Invoice 6</a></li>
-                                            </ul>
-                                        </li>
+                                        {% for category in categories %}
+                                        <li><a href="/shop/{{ category.name | slugify }}/">{{ category.name }}</a></li>
+                                        {% endfor %}
                                     </ul>
                                 </li>
                                 <li>
@@ -384,7 +358,7 @@
                                         <li><a href="blog-category-grid">Gujarati Panchang</a></li>
                                         <li><a href="blog-category-list">English Pachang</a></li>
                                         <li><a href="blog-category-list">Vastu Muharat</a></li>
-                                        
+
                                     </ul>
                                 </li>
                                 <li>
@@ -568,7 +542,7 @@
                     <ul class="mobile-menu font-heading">
                         <li class="menu-item-has-children">
                             <a href="/">Home</a>
-                            
+
                         </li>
                         <li class="menu-item-has-children">
                             <a href="/freeadvice/">Free Advice
@@ -588,32 +562,11 @@
                         <li class="menu-item-has-children">
                             <a href="/shop/">Shop</a>
                             <ul class="dropdown">
+                                {% for category in categories %}
                                 <li class="menu-item-has-children">
-                                    <a href="#">Women's Fashion</a>
-                                    <ul class="dropdown">
-                                        <li><a href="shop-product-right">Dresses</a></li>
-                                        <li><a href="shop-product-right">Blouses & Shirts</a></li>
-                                        <li><a href="shop-product-right">Hoodies & Sweatshirts</a></li>
-                                        <li><a href="shop-product-right">Women's Sets</a></li>
-                                    </ul>
+                                    <a href="/shop/{{ category.name | slugify }}/">{{ category.name }}</a>
                                 </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Men's Fashion</a>
-                                    <ul class="dropdown">
-                                        <li><a href="shop-product-right">Jackets</a></li>
-                                        <li><a href="shop-product-right">Casual Faux Leather</a></li>
-                                        <li><a href="shop-product-right">Genuine Leather</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Technology</a>
-                                    <ul class="dropdown">
-                                        <li><a href="shop-product-right">Gaming Laptops</a></li>
-                                        <li><a href="shop-product-right">Ultraslim Laptops</a></li>
-                                        <li><a href="shop-product-right">Tablets</a></li>
-                                        <li><a href="shop-product-right">Laptop Accessories</a></li>
-                                        <li><a href="shop-product-right">Tablet Accessories</a></li>
-                                    </ul>
+                                {% endfor %}
                                 </li>
                             </ul>
                         </li>

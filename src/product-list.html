@@ -1,0 +1,80 @@
+---
+layout: base.njk
+pagination:
+    data: categories
+    size: 1
+    alias: category
+permalink: "/shop/{{ category.name | slugify }}/"
+---
+
+<div class="page-header breadcrumb-wrap">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="/" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+            <a href="/shop/" rel="nofollow"><span></span></i>Shop</a>
+            <span></span></i>{{ category.name }}
+        </div>
+    </div>
+</div>
+<div class="page-header mt-30 mb-50">
+    <div class="container">
+        <div class="archive-header">
+            <div class="row align-items-center">
+                <div class="col-xl-3">
+                    <h1 class="mb-15">{{ category.name }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mb-30">
+    <div class="row flex-row-reverse">
+        <div class="col-lg-4-5">
+            <div class="row product-grid">
+                {% for product in products %}
+                {% for cat_id in product.categories_id %}
+                {% if category.id == cat_id %}
+                <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                    
+                    <div class="product-cart-wrap mb-30">
+                        <div class="product-img-action-wrap">
+                            <div class="product-img product-img-zoom">
+                                <a href="/{{ product.name | slugify }}/">
+                                <!-- <a href="/shop/{{ category.name | slugify }}/{{ product.name | slugify }}/"> -->
+                                    <img class="default-img" src="{{ product.image }}" alt="{{ product.name }}" />
+                                    <img class="hover-img" src="{{ category.hover }}" alt="{{ category.name }}" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product category">
+                        <strong class="category-font">
+                            
+                            <a href="/{{ product.name | slugify }}/">{{ product.name}}
+                                
+                            </a>
+                        </strong>
+                    </div>
+                    
+                </div>
+                {% endif %}
+                {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-lg-1-5 primary-sidebar sticky-sidebar">
+            <div class="sidebar-widget widget-category-2 mb-30">
+                <h5 class="section-title style-1 mb-30">Category</h5>
+                <ul>
+                    {% for category in categories %}
+                    <li>
+                     <a href="/shop/{{ category.name | slugify }}/"><img src="/assets/imgs/theme/icons/category-1.svg" alt="" />{{ category.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

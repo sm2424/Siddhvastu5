@@ -10160,6 +10160,12 @@ footer .hotline img {
   border-top: 1px solid #BCE3C9;
 }
 
+.sub-menu.with-scrollbar {
+  max-height: 200px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+
 #scrollUp {
   width: 32px;
   height: 32px;

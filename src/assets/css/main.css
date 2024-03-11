@@ -927,8 +927,10 @@ strong,
   position: fixed;
   bottom: 40px;
   right: 20px;
-  text-align: right;
+  text-align: left;
   z-index: 10;
+  width: 64px;
+  height: 64px;
 }
 @media only screen and (max-width: 600px){
   .whatsapp_img
@@ -10162,7 +10164,7 @@ footer .hotline img {
   width: 32px;
   height: 32px;
   color: #253D4E;
-  right: 30px;
+  left: 30px;
   bottom: 30px;
   border-radius: 30px;
   text-align: center;

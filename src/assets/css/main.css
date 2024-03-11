@@ -8659,7 +8659,7 @@ h6.post-title {
 
 .hotline p {
   color: #34A853;
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 700;
   font-family: "Quicksand", sans-serif;
   display: block;
@@ -8805,12 +8805,12 @@ h6.post-title {
 .header-style-1 .search-style-2 form {
   border: 2px solid #BCE3C9;
   border-radius: 4px;
-  max-width: 700px;
+  max-width: 950px;
   background-color: #fff;
 }
 
 .header-style-1 .search-style-2 form input {
-  max-width: 600px;
+  max-width: 780px;
   border-width: 0px;
   border-radius: 0 5px 5px 0;
   margin-left: 20px;
@@ -10160,10 +10160,12 @@ footer .hotline img {
   border-top: 1px solid #BCE3C9;
 }
 
-.sub-menu.with-scrollbar {
+.sub-menu.with-scrollbar   {
   max-height: 200px; /* Adjust the height as needed */
   overflow-y: auto;
+  scrollbar-width: thin;
 }
+
 
 
 #scrollUp {

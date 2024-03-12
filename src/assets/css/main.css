@@ -935,7 +935,8 @@ strong,
 @media only screen and (max-width: 600px){
   .whatsapp_img
   {
-    width: 15%;
+    width: 56px;
+    height: 56px;
   }
 }
 

@@ -1,6 +1,9 @@
 const { DateTime } = require("luxon");
+const mdxPlugin = require("@jamshop/eleventy-plugin-mdx");
 
-
+module.exports = (eleventyConfig) => {
+  eleventyConfig.addPlugin(mdxPlugin);
+};
 
 module.exports = function (eleventyConfig) {
 

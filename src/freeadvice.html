@@ -2,3 +2,29 @@
 title: Free Advice
 layout: 'base.njk'
 ---
+
+
+<div class="section container">
+    <div class="page-header mt-30 mb-75">
+        <div class="container">
+            <div class="archive-header">
+                <div class="row align-items-center">
+                    <div class="col-xl-3">
+                        <h1 class="mb-15">Free Advice </h1>
+                        <div class="breadcrumb">
+                            <a href="/" rel="nofollow"><i class="fi-rs-home mr-5"></i>Home</a>
+                            <span></span> Free Advice
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul role="list" class="articles__list flow">
+        {%- for post in collections.post | reverse -%}
+        {% include 'article-snippet.njk' %}
+        {%- endfor %}
+    </ul>
+</div>
+
+

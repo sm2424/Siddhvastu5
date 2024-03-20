@@ -1,0 +1,6 @@
+[
+    {"id": 1, "name": "Residential Vastu", "image": "/assets/imgs/shop/new_arrival.jpg", "hover": "/assets/imgs/shop/new_arrival.jpg"},
+    {"id": 2, "name": "Commercial Vastu", "image": "/assets/imgs/shop/7Chakrawithrudhraksh.jpeg", "hover": "/assets/imgs/shop/7Chakrawithrudhraksh.jpeg"},
+    {"id": 3, "name": "Industrial Vastu", "image": "/assets/imgs/shop/multibracelet.jpeg", "hover": "/assets/imgs/shop/multibracelet.jpeg"},
+    {"id": 4, "name": "General Vastu", "image": "/assets/imgs/shop/Candle_Incense_.jpg", "hover": "/assets/imgs/shop/Candle_Incense_.jpg"}
+]

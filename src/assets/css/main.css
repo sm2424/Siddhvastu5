@@ -13517,5 +13517,12 @@ footer .hotline img {
   cursor: pointer;
 }
 
-/* ---------------------- */
+
+/* Blog Author Image  */
+.img-circle {
+  border-radius: 50%;
+  width: 50px; /* Adjust the width and height as needed */
+  height: 28px; /* Adjust the width and height as needed */
+  object-fit: cover; /* Optional: maintains aspect ratio */
+}
 

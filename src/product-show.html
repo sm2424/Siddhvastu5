@@ -66,11 +66,16 @@ permalink: "/{{ product.name | slugify }}/"
                         <div class="detail-info pr-30 pl-30">
                             <span class="stock-status out-stock"> Sale </span>
                             <h2 class="title-detail">{{ product.name }}</h2>
-                            <h1>{{ product.id }}</h1>
+                            
+                            <!-- to know product id and categories id 
+                                <h1>{{ product.id }}</h1>
+                            <h1>{{ product.categories_id | json }}</h1> -->
+                            
                             {% for products in products %}
                             {% for pro_id in products.id %}
                             {% if products.id != pro_id %}
                             <h1>{{ products.id | log }}</h1>
+                            
                             {% endif %}
                             {% endfor %}
                             {% endfor %}

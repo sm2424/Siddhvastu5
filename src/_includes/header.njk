@@ -203,7 +203,12 @@
                                     <a class="active" href="/">Home </a>
                                 </li>
                                 <li>
-                                    <a href="/freeadvice/">Free Advice</a>
+                                    <a href="/freeadvice/">Free Advice <i class="fi-rs-angle-down"></i></a>
+                                    <ul class="sub-menu with-scrollbar">
+                                        {% for blogcategory in blogcategories %}
+                                        <li><a href="/freeadvice/">{{ blogcategory.name }}</a></li>
+                                        {% endfor %}
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="/demo/">Consulting <i class="fi-rs-angle-down"></i></a>
@@ -361,9 +366,14 @@
                             <a href="/">Home</a>
 
                         </li>
-                        <li class="menu-item-has-children">
-                            <a href="/freeadvice/">Free Advice
-                            </a>
+                        <li>
+                            <a href="/freeadvice/">Free Advice <i class="fi-rs-angle-down"></i></a>
+                            <ul class="sub-menu with-scrollbar">
+                                {% for blogcategory in blogcategories %}
+                                <li>
+                                    <a href="/freeadvice/">{{ blogcategory.name }}</a></li>
+                                {% endfor %}
+                            </ul>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="/demo/">Consulting</a>

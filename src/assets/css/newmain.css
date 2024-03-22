@@ -1,5 +1,4 @@
-/* --------------------------------------------------- */
-/* Flexbox in index.hmtl */
+/* Start Flexbox  category of service  */
 #flex-container {
   display: flex;
   height: 300px;
@@ -103,9 +102,6 @@
   color: #34A853;
 }
 
-
-/* Add your existing CSS code here */
-
 /* For responsiveness */
 
 /* Adjust the flex item width for smaller devices */
@@ -145,10 +141,6 @@
     @media only screen and (max-width: 1200px)
     @media only screen and (max-width: 1600px) */
 
-/* CSS for See More link */
-/* CSS for See More link */
-
-
 
 #profile-see-more a {
   position: absolute;
@@ -165,12 +157,6 @@
   font-weight: 700;
   font-family: "Quicksand", sans-serif;
 }
-/* Not */
-/* #profile-see-more a:hover {
-  transform: translate3d(0px, 0px, 50px);
-  color: #34A853;
-} */
-
 
 #flex-content:hover {
   border: 1px solid #34A853;
@@ -185,7 +171,6 @@
 #flex-item:hover #profile-see-more a {
   transform: translate3d(0px, 0px, 50px);
   color: #34A853;
-  /* Change hover color to green */
 }
 
 #flex-item:hover #img-box img {
@@ -193,4 +178,124 @@
   /* Increase image size on hover */
   transition: transform 0.5s ease;
   /* Add transition for smooth effect */
+}
+/* End Flexbox  category of service  */
+
+/* --------------------------------------- */
+
+/* Start Profile-Aboutme */
+
+.profileabout {
+  background-color: white;
+}
+
+.mainabout {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-container {
+  position: relative;
+  width: 260px;
+}
+
+.image-container img {
+  height: 260px;
+  width: 300px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 40px;
+  background: #fff;
+  transition: 0.5s ease;
+}
+
+#profilename {
+  position: absolute;
+  width: 150px;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 0px;
+  border-radius: 29px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.about-text {
+  flex: 1;
+  padding: 0 25px;
+  margin-bottom: -25px;
+}
+
+.about-text h5 {
+  color: black;
+  font-size: 28px;
+  margin-bottom: 0.4em;
+}
+
+.about-text p {
+  text-align: justify;
+  color: black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+#profilecontactlink {
+  margin-top: -28px;
+}
+
+#profilecontactlink a {
+  margin-right: 10px;
+}
+
+#profilecontactlink a img {
+  width: 45px;
+  height: 45px;
+}
+
+#profileimage:hover {
+  border: 1px solid #34A853;
+  box-shadow: 0px 0px 10px green;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .mainabout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 70%;
+  }
+
+  .about-text {
+    padding: 25px 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-container {
+    width: 90%;
+  }
+}
+/* End Profile-Aboutme */
+
+/* --------------------------------------- */
+
+/* Testimonial */
+
+
+#testimonial{
+  display: flex;
+  justify-content: center;
 }

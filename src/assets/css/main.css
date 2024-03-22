@@ -923,7 +923,7 @@ strong,
   margin-left: 473px;
 }
 
-.whatsapp_main{
+.whatsapp_main {
   position: fixed;
   bottom: 40px;
   right: 20px;
@@ -932,9 +932,9 @@ strong,
   width: 64px;
   height: 64px;
 }
-@media only screen and (max-width: 600px){
-  .whatsapp_img
-  {
+
+@media only screen and (max-width: 600px) {
+  .whatsapp_img {
     width: 50px;
     height: 50px;
   }
@@ -2595,7 +2595,7 @@ input.qty-val {
 /* Profile Text Area */
 .profile-text-area {
   padding: 25px;
-  background-color: white ;
+  background-color: white;
   border-radius: 8px;
   margin-bottom: 20px;
 }
@@ -5241,13 +5241,15 @@ table .product-thumbnail img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -12px; 
-  margin-bottom: 20px; 
+  margin-top: -12px;
+  margin-bottom: 20px;
 }
-  
+
 .category-font {
-  font-size: 20px; /* Increase font size to 20px, adjust as needed */
-  font-weight: bold; /* Make the text bold */
+  font-size: 20px;
+  /* Increase font size to 20px, adjust as needed */
+  font-weight: bold;
+  /* Make the text bold */
 }
 
 
@@ -10187,8 +10189,9 @@ footer .hotline img {
   border-top: 1px solid #BCE3C9;
 }
 
-.sub-menu.with-scrollbar   {
-  max-height: 200px; /* Adjust the height as needed */
+.sub-menu.with-scrollbar {
+  max-height: 200px;
+  /* Adjust the height as needed */
   overflow-y: auto;
   scrollbar-width: thin;
 }
@@ -13215,12 +13218,13 @@ footer .hotline img {
     font-size: 35px;
   }
 }
+
 /* ------------------ */
 .scroller {
   max-width: 100%;
 }
 
-.scroller__inner{
+.scroller__inner {
   padding-block: 1rem;
   display: flex;
   /* gap between tag */
@@ -13230,21 +13234,18 @@ footer .hotline img {
 
 .scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
+  -webkit-mask: linear-gradient(90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent);
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 140s)
-    var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 140s) var(--_animation-direction, forwards) linear infinite;
 }
 
 @keyframes scroll {
@@ -13253,49 +13254,49 @@ footer .hotline img {
   }
 }
 
-.cards{
+.cards {
   height: 400px;
-  width:500px;
+  width: 500px;
   /* padding: 10px; */
   perspective: 1000px;
 }
 
-.card{
+.card {
   padding-top: 100px;
   transform-style: preserve-3d;
   background-color: #34A853;
   /* background-image: url("/assets/imgs/bg.jpg"); */
   background-position: center center;
-  width:240px;
+  width: 240px;
   /* border: 1px solid rgba(255,255,255,0.1); */
   /* border-radius: 10px; */
   transition: all 0.5 ease-in-out;
 }
 
-.content-box{
+.content-box {
   height: 100%;
   width: 100%;
-  background-color:rgba(0, 0, 0, 0.811);
+  background-color: rgba(0, 0, 0, 0.811);
   border-radius: 0px 0px 10px 10px;
-  box-shadow: rgba(0,115,255,0.925) 0px 20px 50px -25px;
+  box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
   transition: all 0.5s ease-in-out;
   padding: 50px 25px 25px 25px;
   transform-style: preserve-3d;
 }
 
-.content-box .card-title{
+.content-box .card-title {
   color: #fff;
   font-size: 24px;
   font-weight: 800;
   transition: all 0.5s ease-in-out;
-  transform: translate3d(0px, 0px,20px);
+  transform: translate3d(0px, 0px, 20px);
 }
 
-.content-box .card-title:hover{
+.content-box .card-title:hover {
   transform: translate3d(0px, 0px, 90px);
 }
 
-.content-box .card-content{
+.content-box .card-content {
   padding-top: 18px;
   font-size: 13px;
   color: #d7d7d7;
@@ -13303,11 +13304,11 @@ footer .hotline img {
   transform: translate3d(0px, 0px, 20px);
 }
 
-.content-box .card-content:hover{
-  transform: translate3d(0px, 0px,50px);
+.content-box .card-content:hover {
+  transform: translate3d(0px, 0px, 50px);
 }
 
-.content-box .see-more{
+.content-box .see-more {
   display: block;
   font-weight: 700;
   font-size: 12px;
@@ -13318,16 +13319,16 @@ footer .hotline img {
   transform: translate3d(0px, 0px, 20px);
 }
 
-.content-box .see-more:hover{
-  transform: translate3d(0px, 0px,50px);
+.content-box .see-more:hover {
+  transform: translate3d(0px, 0px, 50px);
 }
 
-.date-box{
+.date-box {
   position: absolute;
   top: 75px;
   left: 25px;
   height: 60px;
-  width:60px;
+  width: 60px;
   background-color: orange;
   border-radius: 10px;
   padding: 10px;
@@ -13335,33 +13336,38 @@ footer .hotline img {
   transform: translate3d(0px, 0px, 50px);
   display: flex;
   justify-content: center;
-  align-items: center; /* Center the image vertically */
+  align-items: center;
+  /* Center the image vertically */
 }
 
 .date-box img {
   width: 100%;
   height: auto;
-  max-width: 100%; /* Ensure the image does not exceed the container's width */
-  max-height: 100%; /* Ensure the image does not exceed the container's height */
-  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  max-width: 100%;
+  /* Ensure the image does not exceed the container's width */
+  max-height: 100%;
+  /* Ensure the image does not exceed the container's height */
+  transition: transform 0.3s ease;
+  /* Smooth transition for hover effect */
 }
 
 .date-box:hover img {
-  transform: scale(1.2); /* Enlarge the image on hover */
+  transform: scale(1.2);
+  /* Enlarge the image on hover */
 }
 
-.date-box span{
+.date-box span {
   display: block;
   text-align: center;
 }
 
-.date-box .month{
+.date-box .month {
   color: #fff;
   font-size: 11px;
   font-weight: 700;
 }
 
-.date-box.date{
+.date-box.date {
   font-size: 20px;
   font-weight: 900;
   color: #0088ff;
@@ -13388,7 +13394,7 @@ footer .hotline img {
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(45deg, #fbda61, #ff5acd); */
-  }
+}
 
 .cardprofile {
   top: 100px;
@@ -13401,27 +13407,25 @@ footer .hotline img {
   transition: 0.5s;
 }
 
-.cardprofile:hover
-{
+.cardprofile:hover {
   height: 450px;
 }
 
-.imgbox{
+.imgbox {
   position: absolute;
   left: 50%;
-  top:-50px;
+  top: -50px;
   transform: translateX(-50%);
   width: 120px;
   height: 120px;
   background: #fff;
   border-radius: 20px;
-  box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
   overflow: hidden;
   transition: 0.5s;
 }
 
-.imgbox img 
-{
+.imgbox img {
   position: absolute;
   top: 0;
   left: 0;
@@ -13430,14 +13434,12 @@ footer .hotline img {
   object-fit: cover;
 }
 
-.cardprofile:hover .imgbox
-{
+.cardprofile:hover .imgbox {
   width: 150px;
   height: 150px;
 }
 
-.cardprofile .cardcontent
-{
+.cardprofile .cardcontent {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -13447,8 +13449,7 @@ footer .hotline img {
   overflow: hidden;
 }
 
-.cardprofile .cardcontent .carddetails 
-{
+.cardprofile .cardcontent .carddetails {
   padding: 40px;
   text-align: center;
   width: 100%;
@@ -13456,56 +13457,48 @@ footer .hotline img {
   transform: translateY(150px);
 }
 
-.cardprofile:hover .cardcontent .carddetails 
-{
+.cardprofile:hover .cardcontent .carddetails {
   transform: translateY(-60px);
 }
 
-.cardprofile .cardcontent .carddetails h2
-{
+.cardprofile .cardcontent .carddetails h2 {
   font-size: 1.25em;
   font-weight: 600;
   color: #555;
   line-height: 1.2em;
 }
 
-.cardprofile .cardcontent .carddetails h2 span
-{
+.cardprofile .cardcontent .carddetails h2 span {
   font-size: 0.75em;
   font-weight: 500;
   opacity: 0.5;
 }
 
-.cardprofile .cardcontent .carddetails .profiledata 
-{
+.cardprofile .cardcontent .carddetails .profiledata {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
 }
 
-.cardprofile .cardcontent .carddetails .profiledata h3
-{
+.cardprofile .cardcontent .carddetails .profiledata h3 {
   font-size: 1em;
   color: #555;
   line-height: 1.2em;
   font-weight: 600;
 }
 
-.cardprofile .cardcontent .carddetails .profiledata h3 span
-{
+.cardprofile .cardcontent .carddetails .profiledata h3 span {
   font-size: 0.85em;
   font-weight: 400;
   opacity: 0.5;
 }
 
-.cardprofile .cardcontent .carddetails .profileactionBtn
-{
+.cardprofile .cardcontent .carddetails .profileactionBtn {
   display: flex;
   justify-content: center;
 }
 
-.cardprofile .cardcontent .carddetails .profileactionBtn button
-{
+.cardprofile .cardcontent .carddetails .profileactionBtn button {
   padding: 10px 30px;
   border-radius: 5px;
   border: none;
@@ -13518,11 +13511,14 @@ footer .hotline img {
 }
 
 
-/* Blog Author Image  */ 
+/* Blog Author Image  */
 .img-circle {
   border-radius: 50%;
-  width: 50px; /* Adjust the width and height as needed */
-  height: 28px; /* Adjust the width and height as needed */
-  object-fit: cover; /* Optional: maintains aspect ratio */
+  width: 50px;
+  /* Adjust the width and height as needed */
+  height: 28px;
+  /* Adjust the width and height as needed */
+  object-fit: cover;
+  /* Optional: maintains aspect ratio */
 }
 

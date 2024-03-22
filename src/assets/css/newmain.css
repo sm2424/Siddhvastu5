@@ -1,0 +1,196 @@
+/* --------------------------------------------------- */
+/* Flexbox in index.hmtl */
+#flex-container {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#flex-item {
+  background-color: #ECFFEC;
+  margin: 12px;
+  width: 181px;
+  height: 200px;
+  border-radius: 10px;
+  transition: box-shadow 0.5s ease;
+  text-align: center;
+}
+
+.card1 {
+  filter: hue-rotate(150deg);
+}
+
+.card2 {
+  filter: hue-rotate(300deg);
+}
+
+.card3 {
+  filter: hue-rotate(450deg);
+}
+
+.card4 {
+  filter: hue-rotate(600deg);
+}
+
+.card5 {
+  filter: hue-rotate(750deg);
+}
+
+#flex-item:hover {
+  box-shadow: 0px 0px 10px green;
+}
+
+
+#flex-content {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  background: #fff;
+  padding: 22px;
+  width: 145px;
+  height: 145px;
+  margin-top: 200px;
+  position: relative;
+  z-index: 2;
+  -webkit-transform: translateY(-90px);
+  transform: translateY(-90px);
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#profile-flex-img {
+  max-width: none;
+  position: absolute;
+  top: -117px;
+  left: 20px;
+  height: 105px;
+  width: 105px;
+  border-radius: 10px;
+  padding: 3px;
+  box-shadow: #0066ff 0px 20px 60px 0px, #00c8ff 0px, 18px, 36px, -18px;
+  transform: translate3d(0px, 0px, 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-flex-img.planning {
+  margin-top: 8px;
+  height: 94px;
+}
+
+#profile-flex-img.astrology {
+  margin-top: 7px;
+}
+
+#profile-flex-img.numrology {
+  margin-top: 4px;
+}
+
+#card-title {
+  color: #253D4E;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+}
+
+#card-title:hover {
+  transform: translate3d(0px, 0px, 90px);
+  color: #34A853;
+}
+
+
+/* Add your existing CSS code here */
+
+/* For responsiveness */
+
+/* Adjust the flex item width for smaller devices */
+@media screen and (max-width: 768px) {
+  #flex-item {
+    width: calc(50% - 24px);
+    /* Two items per row */
+    margin: 100px;
+  }
+
+  #flex-container {
+    height: auto;
+    /* overflow: hidden; */
+  }
+}
+
+/* Adjust the flex item width for even smaller devices */
+@media screen and (max-width: 480px) {
+  #flex-item {
+    width: calc(100% - 24px);
+    /* Single item per row */
+    margin: 100px;
+  }
+
+  #flex-container {
+    height: auto;
+    /* overflow: hidden; */
+  }
+
+}
+
+/* Adjust other styles as needed for responsiveness */
+
+/* @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 1200px)
+    @media only screen and (max-width: 1600px) */
+
+/* CSS for See More link */
+/* CSS for See More link */
+
+
+
+#profile-see-more a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  text-transform: uppercase;
+  padding-top: 15px;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+  text-decoration: none;
+  color: #253D4E;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+}
+/* Not */
+/* #profile-see-more a:hover {
+  transform: translate3d(0px, 0px, 50px);
+  color: #34A853;
+} */
+
+
+#flex-content:hover {
+  border: 1px solid #34A853;
+  box-shadow: 0px 0px 10px green;
+}
+
+#flex-item:hover #card-title {
+  transform: translate3d(0px, 0px, 90px);
+  color: #34A853;
+}
+
+#flex-item:hover #profile-see-more a {
+  transform: translate3d(0px, 0px, 50px);
+  color: #34A853;
+  /* Change hover color to green */
+}
+
+#flex-item:hover #img-box img {
+  transform: scale(1.1);
+  /* Increase image size on hover */
+  transition: transform 0.5s ease;
+  /* Add transition for smooth effect */
+}
